@@ -1,0 +1,44 @@
+html{
+  background-image: url("background.jpg");
+  font-family: sans-serif;
+}
+
+header,section,form{
+  float: left;
+  text-align: center;
+}
+header{
+  width: 100%;
+}
+
+section,form{
+  width:49%;
+  height:500px;
+}
+
+h3{
+  background-color: aliceblue;
+  height: 37px;
+  text-align: center;
+  margin: auto;
+  padding-top: 8px;
+}
+
+
+li{
+  list-style: none;
+}
+
+li span{
+  font-size: 2rem;
+  margin:2%;
+}
+
+li span:nth-child(1),li span:nth-child(2){
+  margin:0
+}
+
+form input, button{
+  font-size: 1.5rem;
+  border-radius: 7%;
+}

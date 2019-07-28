@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <meta charset="utf-8">
+    <title>Weight Tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1>Weight tracker</h1>
+    </header>
+    <section>
+    <h3>Weight History</h3>
+    <ul>
+      <% for(var i=0; i<weight.length; i++) {%>
+        <li>
+          <span><%= weight[i].userWeight %></span><span>lbs</span>
+          <span><%= weight[i].userDate %></span>
+          <span><i class="fas fa-pen"></i></span>
+          <span><i class="fas fa-trash"></i></span>
+        </li>
+      <% } %>
+    </ul>
+  </section>
+    <form class="" action="/addData" method="post">
+      <input id="addText"type="text" name="currentWeight" value="" placeholder="Current Weight">
+      <input id="addDate"type="date" name="currentDate" value="">
+      <button type="submit" name="button">Add</button>
+    </form>
+    <div id="error"></div>
+  </body>
+
+  <script src="js/main.js"></script>
+</html>
